@@ -30,6 +30,6 @@ index 828f7c1..a5c70aa 100644
 
 # 遗留的疑问
 
-`LLDB`的单步运行对源程序的影响究竟有多大?
+使用LLDB进行单步调试和直接运行崩溃位置不同, 确切来说 直接运行的时候崩溃位置更接近代码异常的位置.
 
 详细的问题描述放在了[一个意外](https://madordie.github.io/post/what-happened-to-the-bridge-in-ios/#%E4%B8%80%E4%B8%AA%E6%84%8F%E5%A4%96)
