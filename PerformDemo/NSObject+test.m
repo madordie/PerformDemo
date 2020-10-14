@@ -7,6 +7,7 @@
 //
 
 #import "NSObject+test.h"
+#import <objc/runtime.h>
 
 @implementation NSObject (test)
 - (id)performSelector:(SEL)aSelector withObjects:(NSArray *)objects {
@@ -29,7 +30,7 @@
         }
         [invocation invoke];
         //返回值处理
-        id callBackObject = nil;
+        id callBackObject = NULL;
         if(methodSignature.methodReturnLength) {
             [invocation getReturnValue:&callBackObject];
         }
